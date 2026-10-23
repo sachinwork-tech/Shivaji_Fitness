@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0B0C0E">
+<meta name="format-detection" content="telephone=no">
+<title>KaiZen Fitness | Premium Gym in Kohka, Bhilai</title>
+<meta name="description" content="KaiZen Fitness is a gym and fitness centre in Kohka, Bhilai, Chhattisgarh, offering strength training, personal training and fitness guidance. Rated 4.5/5 by local members. Visit us at Avanti Bai Chowk, Kohka.">
+<meta name="keywords" content="Gym in Kohka, Gym in Bhilai, Fitness Centre in Bhilai, KaiZen Fitness Kohka">
+<meta property="og:title" content="KaiZen Fitness | Gym in Kohka, Bhilai">
+<meta property="og:description" content="Strength training, personal training and fitness guidance in Kohka, Bhilai.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="p.css">
+
+<!-- ===== MOBILE FIXES (new) — overrides style.css, no CSS file change needed ===== -->
+<style>
+  /* iOS Safari ignores overflow-x on body alone: clip on html too */
+  html { overflow-x: hidden; overflow-x: clip; }
+  body { overflow-x: hidden; overflow-x: clip; max-width: 100%; }
+  .site-header { padding-top: env(safe-area-inset-top, 0px); }
+  .site-footer { padding-bottom: calc(var(--wm) * 0.8 + env(safe-area-inset-bottom, 0px)); }
+
+  @media (max-width: 960px) {
+    /* bigger tap area for hamburger, menu scrolls inside screen */
+    .nav-toggle-label { min-width: 48px; min-height: 48px; align-items: center; justify-content: center; margin-right: -0.9rem; }
+    .nav-links { max-height: 0; }
+    .nav-toggle-input:checked ~ .nav-links { max-height: calc(100svh - 3.6rem - env(safe-area-inset-top, 0px)); -webkit-overflow-scrolling: touch; overscroll-behavior: contain; }
+    .nav-links a { min-height: 52px; display: flex; align-items: center; }
+    .nav-links .nav-cta-item a.nav-cta { justify-content: center; }
+  }
+
+  @media (max-width: 780px) {
+    /* performance: remove heavy fixed grain + blur on phones */
+    body::after { display: none; }
+    .site-header.is-scrolled { background: rgba(11, 12, 14, 0.96); -webkit-backdrop-filter: none; backdrop-filter: none; }
+    .btn-outline { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(245, 243, 239, 0.06); }
+    .hero-glow { animation: none; opacity: 0.85; }
+
+    /* hero */
+    .hero-stage { min-height: 100svh; align-items: flex-end; }
+    .hero-title { font-size: clamp(2.2rem, 11.5vw, 3.6rem); line-height: 1; margin-bottom: 1.25rem; }
+    .hero-overlay { background:
+      linear-gradient(180deg, rgba(11,12,14,.65) 0%, rgba(11,12,14,.55) 40%, rgba(11,12,14,.85) 80%, var(--bg) 100%),
+      linear-gradient(95deg, rgba(11,12,14,.7), rgba(11,12,14,.35)); }
+    .hero-ghost { font-size: 34vw; }
+    .hero-actions { flex-direction: column; gap: .75rem; }
+    .hero-actions .btn { width: 100%; min-height: 52px; }
+    .hero-whatsapp { min-height: 44px; }
+    .hero-rating { max-width: none; }
+
+    /* no clip-path / sticky tricks on touch screens */
+    .training-panel { clip-path: none; position: relative; top: auto; }
+    .training-panel .training-media { height: 230px; }
+    .text-link, .card-link { padding: .6rem 0; min-height: 44px; }
+
+    /* parallax is off on mobile: keep images simply cropped inside frames */
+    .about-frame--tall { aspect-ratio: 4 / 4.4; }
+    .g-item { transform: none !important; }
+    .about-bgword { font-size: 38vw; margin-top: -.45em; }
+    .about-badge { right: 2%; }
+
+    .section-title { font-size: clamp(1.85rem, 8vw, 2.4rem); }
+    .motivation-content h2 { font-size: clamp(2rem, 9vw, 3rem); }
+    .final-cta h2 { font-size: clamp(2.1rem, 10vw, 3.2rem); }
+    .marquee-track span { font-size: clamp(2.6rem, 14vw, 4.5rem); }
+
+    .facilities-list li span { font-size: 1.1rem; }
+    .location-phone { min-height: 44px; display: inline-flex; align-items: center; }
+    .location-actions .btn, .final-cta-actions .btn { min-height: 52px; }
+    .location-map iframe { filter: none; }
+    .plan-card:hover { translate: none; }
+    .footer-grid a { min-height: 40px; display: inline-flex; align-items: center; }
+    .site-footer { --wm: 26vw; }
+  }
+
+  @media (max-width: 360px) {
+    .hero-title { font-size: 2.1rem; }
+    .btn { padding-left: 1.2rem; padding-right: 1.2rem; }
+    .reviews-stars svg { width: 1.2rem; height: 1.2rem; }
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+<!-- ================= NAV ================= -->
+<header class="site-header" id="top">
+  <nav class="nav-bar" aria-label="Primary">
+    <a href="#top" class="nav-logo">KAI<span>ZEN</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu"><span></span><span></span><span></span></label>
+    <ul class="nav-links">
+      <li><a href="#top">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#training">Training</a></li>
+      <li><a href="#facilities">Facilities</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="nav-cta-item"><a href="#contact" class="nav-cta">Join / Enquire</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="hero">
+    <div class="hero-stage">
+      <div class="hero-layer hero-layer--bg" data-speed="0.25">
+        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1800&auto=format&fit=crop" alt="Athlete lifting a barbell inside a dimly lit strength training gym" class="hero-img">
+      </div>
+      <div class="hero-layer hero-layer--mid" data-speed="0.12" aria-hidden="true">
+        <span class="hero-ghost">KAIZEN</span>
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-glow" data-speed="-0.15" aria-hidden="true"></div>
+
+      <div class="hero-content" data-speed="-0.08">
+        <p class="hero-location">Kohka, Bhilai</p>
+        <h1 class="hero-title">
+          <span class="hero-mask"><span class="hero-line">Build the</span></span>
+          <span class="hero-mask"><span class="hero-line hero-line--accent">stronger version</span></span>
+          <span class="hero-mask"><span class="hero-line">of you.</span></span>
+        </h1>
+        <p class="hero-sub">A gym and fitness centre in Kohka built around one idea &mdash; small, disciplined efforts, repeated daily. No shortcuts, no gimmicks. Just consistent training.</p>
+
+        <div class="hero-actions">
+          <a href="tel:+917000835622" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.7 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8z"/></svg>
+            Call Now
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&query=KaiZen+Fitness+Avanti+Bai+Chowk+Kohka+Bhilai+Chhattisgarh+490023" target="_blank" rel="noopener" class="btn btn-outline">Get Directions</a>
+        </div>
+
+        <a class="hero-whatsapp" href="https://wa.me/917000835622?text=Hi%20KaiZen%20Fitness%2C%20I%20would%20like%20to%20know%20more%20about%20membership%20and%20training%20options." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" class="wa-icon" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3c1.5.8 3.1 1.3 4.9 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3C4 15 3.5 13.5 3.5 12c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.5-8.5 8.5zm4.6-6.3c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.4-1.8-.1-.2 0-.4.1-.5.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.4 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1.1 2.6c.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+          Enquire on WhatsApp
+        </a>
+
+        <div class="hero-rating">
+          <span class="hero-rating-score">4.5<span class="hero-rating-max">/5</span></span>
+          <span class="hero-rating-text">Rated by local members<br>&mdash; approx. 50 public reviews</span>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section"><span></span></a>
+  </section>
+
+  <!-- ================= MARQUEE ================= -->
+  <section class="marquee" aria-label="Our approach">
+    <div class="marquee-track" aria-hidden="true">
+      <span>Strength</span><span>Discipline</span><span>Consistency</span><span>Recovery</span><span>Habit</span><span>Strength</span><span>Discipline</span><span>Consistency</span><span>Recovery</span><span>Habit</span>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="about" id="about">
+    <div class="about-bgword" data-speed="0.2" aria-hidden="true">KAIZEN</div>
+    <div class="about-grid">
+      <div class="about-images">
+        <figure class="about-frame about-frame--tall" data-speed="0.08">
+          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=900&auto=format&fit=crop" alt="Person performing a barbell back squat" class="about-img" loading="lazy" data-inner-speed="0.12">
+        </figure>
+        <figure class="about-frame about-frame--wide" data-speed="-0.15">
+          <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=900&auto=format&fit=crop" alt="Close up of hands chalking up before a lift" class="about-img" loading="lazy" data-inner-speed="0.1">
+        </figure>
+        <span class="about-badge" data-speed="-0.25" aria-hidden="true">4.5&#9733;</span>
+      </div>
+
+      <div class="about-copy">
+        <p class="eyebrow-plain" data-reveal>Gym &amp; Fitness Centre in Kohka, Bhilai</p>
+        <h2 class="section-title" data-reveal>Consistency built, one session at a time.</h2>
+        <p class="about-text" data-reveal>KaiZen Fitness is a fitness centre serving Kohka and the wider Bhilai area, publicly listed as a gym in the neighbourhood for several years. The approach here is simple: strength comes from showing up, training with intent, and treating recovery and habits with the same seriousness as the workout itself.</p>
+        <p class="about-text" data-reveal>Whether you're starting out, returning after a break, or training toward a specific goal, the focus stays on doing the fundamentals well and building from there &mdash; steadily, without shortcuts.</p>
+        <a href="#contact" class="text-link" data-reveal>Enquire about training &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY KAIZEN ================= -->
+  <section class="why" id="why">
+    <div class="why-head">
+      <h2 class="section-title" data-reveal>Why train at KaiZen</h2>
+      <p class="why-sub" data-reveal>A few things that shape every session here.</p>
+    </div>
+    <div class="why-grid">
+      <article class="why-card" data-reveal>
+        <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 4v10M24 34v10M4 24h10M34 24h10" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="24" cy="24" r="9" stroke="currentColor" stroke-width="3" fill="none"/></svg></span>
+        <h3>Train with purpose</h3>
+        <p>Every visit is built around a clear focus, not random effort.</p>
+      </article>
+      <article class="why-card" data-reveal>
+        <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M10 34l8-16 8 10 6-8 6 14" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <h3>Build real strength</h3>
+        <p>Foundational strength training that supports every other goal.</p>
+      </article>
+      <article class="why-card" data-reveal>
+        <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="8" y="8" width="32" height="32" rx="2" stroke="currentColor" stroke-width="3" fill="none"/><path d="M16 16h4v4h-4zM28 16h4v4h-4zM16 28h4v4h-4zM28 28h4v4h-4z" fill="currentColor"/></svg></span>
+        <h3>Stay consistent</h3>
+        <p>Habits and schedules designed to be repeated, week after week.</p>
+      </article>
+      <article class="why-card" data-reveal>
+        <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="18" cy="14" r="6" stroke="currentColor" stroke-width="3" fill="none"/><path d="M6 40c0-8 6-13 12-13s12 5 12 13" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M30 22l4 4 8-8" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <h3>Personal guidance</h3>
+        <p>Ask the team about one-on-one direction suited to your goal.</p>
+      </article>
+      <article class="why-card" data-reveal>
+        <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 6L6 15l18 9 18-9L24 6z" stroke="currentColor" stroke-width="3" fill="none" stroke-linejoin="round"/><path d="M6 24l18 9 18-9M6 33l18 9 18-9" stroke="currentColor" stroke-width="3" fill="none" stroke-linejoin="round"/></svg></span>
+        <h3>Every level welcome</h3>
+        <p>Fitness training paced to where you're starting from.</p>
+      </article>
+      <article class="why-card" data-reveal>
+        <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 4c-6 6-14 8-14 8v14c0 10 8 16 14 18 6-2 14-8 14-18V12s-8-2-14-8z" stroke="currentColor" stroke-width="3" fill="none" stroke-linejoin="round"/></svg></span>
+        <h3>Results through discipline</h3>
+        <p>No shortcuts promised &mdash; just steady, repeatable work.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= TRAINING ================= -->
+  <section class="training" id="training">
+    <div class="training-head">
+      <p class="eyebrow-plain" data-reveal>Training</p>
+      <h2 class="section-title" data-reveal>Find your way of training.</h2>
+    </div>
+    <div class="training-stack">
+      <article class="training-panel">
+        <div class="training-media"><img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=1200&auto=format&fit=crop" alt="Rack of dumbbells in a strength training area" loading="lazy" data-inner-speed="0.15"></div>
+        <div class="training-body">
+          <h3>Strength Training</h3>
+          <p>Barbell and dumbbell work focused on building a solid strength base.</p>
+          <a href="#contact" class="card-link">Enquire Now &rarr;</a>
+        </div>
+      </article>
+      <article class="training-panel">
+        <div class="training-media"><img src="https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?q=80&w=900&auto=format&fit=crop" alt="Trainer guiding a client through an exercise" loading="lazy" data-inner-speed="0.15"></div>
+        <div class="training-body">
+          <h3>Personal Training</h3>
+          <p>One-on-one guidance tailored to your goals. Ask the team about availability.</p>
+          <a href="#contact" class="card-link">Enquire Now &rarr;</a>
+        </div>
+      </article>
+      <article class="training-panel">
+        <div class="training-media"><img src="https://images.unsplash.com/photo-1520877880798-5ee004e3f11e?q=80&w=900&auto=format&fit=crop" alt="Person mid-stride during a fitness workout" loading="lazy" data-inner-speed="0.15"></div>
+        <div class="training-body">
+          <h3>Fitness &amp; Weight-Loss Training</h3>
+          <p>Structured fitness sessions built around your goals. Ask the team about availability.</p>
+          <a href="#contact" class="card-link">Enquire Now &rarr;</a>
+        </div>
+      </article>
+      <article class="training-panel">
+        <div class="training-media"><img src="https://images.unsplash.com/photo-1607962837359-5e7e89f86776?q=80&w=900&auto=format&fit=crop" alt="Functional training equipment set up on a gym floor" loading="lazy" data-inner-speed="0.15"></div>
+        <div class="training-body">
+          <h3>Functional / CrossFit-style Training</h3>
+          <p>Varied, high-effort functional work. Ask the team about current sessions.</p>
+          <a href="#contact" class="card-link">Enquire Now &rarr;</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= FACILITIES ================= -->
+  <section class="facilities" id="facilities">
+    <div class="facilities-media">
+      <img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?q=80&w=1400&auto=format&fit=crop" alt="Gym floor with racked dumbbells and training equipment" loading="lazy" data-inner-speed="0.15">
+    </div>
+    <div class="facilities-copy">
+      <p class="eyebrow-plain" data-reveal>What to expect</p>
+      <h2 class="section-title" data-reveal>A space built for training.</h2>
+      <ul class="facilities-list">
+        <li data-reveal><span>Strength Area</span><small>Free weights and barbell space</small></li>
+        <li data-reveal><span>Cardio</span><small>Space set aside for conditioning work</small></li>
+        <li data-reveal><span>Functional Training</span><small>Room for varied, functional movement</small></li>
+        <li data-reveal><span>Workout Space</span><small>Open floor for structured sessions</small></li>
+        <li data-reveal><span>Training Guidance</span><small>Support to keep your form and plan on track</small></li>
+      </ul>
+      <p class="facilities-note" data-reveal>Ask the team for a walkthrough of the current setup on your visit.</p>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY ================= -->
+  <section class="gallery" id="gallery">
+    <div class="gallery-head">
+      <p class="eyebrow-plain" data-reveal>Gallery</p>
+      <h2 class="section-title" data-reveal>Inside the everyday work.</h2>
+    </div>
+    <div class="gallery-grid">
+      <figure class="g-item g-tall" data-speed="0.06"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=900&auto=format&fit=crop" alt="Athlete lifting a heavy barbell" loading="lazy"></figure>
+      <figure class="g-item" data-speed="-0.1"><img src="https://images.unsplash.com/photo-1550345332-09e3ac987658?q=80&w=900&auto=format&fit=crop" alt="Gym interior with training equipment" loading="lazy"></figure>
+      <figure class="g-item" data-speed="0.12"><img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?q=80&w=900&auto=format&fit=crop" alt="Close-up of a dumbbell on a rack" loading="lazy"></figure>
+      <figure class="g-item g-wide" data-speed="-0.05"><img src="https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?q=80&w=900&auto=format&fit=crop" alt="Person performing a weighted training movement" loading="lazy"></figure>
+      <figure class="g-item" data-speed="0.1"><img src="https://images.unsplash.com/photo-1584735175315-9d5df23860e6?q=80&w=900&auto=format&fit=crop" alt="Gym flooring and training area" loading="lazy"></figure>
+      <figure class="g-item g-tall" data-speed="-0.08"><img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=900&auto=format&fit=crop" alt="Fitness lifestyle moment after training" loading="lazy"></figure>
+      <figure class="g-item" data-speed="0.07"><img src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?q=80&w=900&auto=format&fit=crop" alt="Athletic training in low light" loading="lazy"></figure>
+      <figure class="g-item g-wide" data-speed="-0.12"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=900&auto=format&fit=crop" alt="Strength training session in progress" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <!-- ================= MOTIVATION ================= -->
+  <section class="motivation" id="motivation">
+    <div class="motivation-bg" data-speed="0.3"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1800&auto=format&fit=crop" alt="Silhouette of an athlete mid-lift" class="motivation-img" loading="lazy"></div>
+    <div class="motivation-overlay" aria-hidden="true"></div>
+    <div class="motivation-content">
+      <h2 data-reveal>Your next level starts with one decision.</h2>
+      <a href="tel:+917000835622" class="btn btn-outline btn-outline--light" data-reveal>Call Now</a>
+    </div>
+  </section>
+
+  <!-- ================= REVIEWS ================= -->
+  <section class="reviews" id="reviews">
+    <div class="reviews-card" data-reveal>
+      <div class="reviews-score">
+        <span class="reviews-number">4.5</span>
+        <div class="reviews-stars" aria-label="4.5 out of 5 stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" class="star-half"><defs><linearGradient id="half"><stop offset="50%" stop-color="currentColor"/><stop offset="50%" stop-color="transparent"/></linearGradient></defs><path fill="url(#half)" stroke="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2z"/></svg>
+        </div>
+        <p>Rated 4.5/5 by local members<br>&mdash; approx. 50 public reviews</p>
+      </div>
+      <a href="https://www.google.com/maps/search/?api=1&query=KaiZen+Fitness+Avanti+Bai+Chowk+Kohka+Bhilai+Chhattisgarh+490023" target="_blank" rel="noopener" class="btn btn-outline">See More Reviews</a>
+    </div>
+  </section>
+
+  <!-- ================= MEMBERSHIP ================= -->
+  <section class="membership" id="membership">
+    <div class="membership-head">
+      <p class="eyebrow-plain" data-reveal>Membership</p>
+      <h2 class="section-title" data-reveal>Find the plan that fits your goal.</h2>
+    </div>
+    <div class="membership-grid">
+      <article class="plan-card" data-reveal>
+        <h3>Monthly</h3>
+        <p class="plan-price">&#8377;1199</p>
+        <a href="https://wa.me/917000835622?text=Hi%20KaiZen%20Fitness%2C%20I%27d%20like%20to%20ask%20about%20the%20monthly%20membership." target="_blank" rel="noopener" class="btn btn-primary btn-small">Enquire Now</a>
+      </article>
+      <article class="plan-card plan-card--highlight" data-reveal>
+        <h3>Quarterly</h3>
+        <p class="plan-price">&#8377;1999</p>
+        <a href="https://wa.me/917000835622?text=Hi%20KaiZen%20Fitness%2C%20I%27d%20like%20to%20ask%20about%20the%20quarterly%20membership." target="_blank" rel="noopener" class="btn btn-primary btn-small">Enquire Now</a>
+      </article>
+      <article class="plan-card" data-reveal>
+        <h3>Half-Yearly</h3>
+        <p class="plan-price">&#8377;2999</p>
+        <a href="https://wa.me/917000835622?text=Hi%20KaiZen%20Fitness%2C%20I%27d%20like%20to%20ask%20about%20the%20half-yearly%20membership." target="_blank" rel="noopener" class="btn btn-primary btn-small">Enquire Now</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= LOCATION ================= -->
+  <section class="location" id="contact">
+    <div class="location-info">
+      <p class="eyebrow-plain" data-reveal>Visit Us</p>
+      <h2 class="section-title" data-reveal>KaiZen Fitness</h2>
+      <address data-reveal>Avanti Bai Chowk, in front of Petrol Pump,<br>Kohka, Bhilai, Chhattisgarh 490023, India</address>
+      <a class="location-phone" href="tel:+917000835622" data-reveal>+91 70008 35622</a>
+      <div class="location-actions" data-reveal>
+        <a href="tel:+917000835622" class="btn btn-primary">Call Now</a>
+        <a href="https://wa.me/917000835622?text=Hi%20KaiZen%20Fitness%2C%20I%20would%20like%20to%20know%20more%20about%20membership%20and%20training%20options." target="_blank" rel="noopener" class="btn btn-outline">WhatsApp</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=KaiZen+Fitness+Avanti+Bai+Chowk+Kohka+Bhilai+Chhattisgarh+490023" target="_blank" rel="noopener" class="btn btn-outline">Get Directions</a>
+      </div>
+    </div>
+    <div class="location-map">
+      <iframe title="KaiZen Fitness location map" src="https://maps.google.com/maps?q=KaiZen%20Fitness%2C%20Avanti%20Bai%20Chowk%2C%20Kohka%2C%20Bhilai%2C%20Chhattisgarh%20490023&t=&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- ================= FINAL CTA ================= -->
+  <section class="final-cta" id="join">
+    <div class="final-cta-bg" data-speed="0.2" aria-hidden="true"></div>
+    <div class="final-cta-inner">
+      <h2 data-reveal>Ready to get stronger?</h2>
+      <p data-reveal>Your first step is simple.</p>
+      <div class="final-cta-actions" data-reveal>
+        <a href="tel:+917000835622" class="btn btn-primary btn-large">Call KaiZen Fitness</a>
+        <a href="https://wa.me/917000835622?text=Hi%20KaiZen%20Fitness%2C%20I%20would%20like%20to%20know%20more%20about%20membership%20and%20training%20options." target="_blank" rel="noopener" class="btn btn-outline btn-large">WhatsApp Us</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=KaiZen+Fitness+Avanti+Bai+Chowk+Kohka+Bhilai+Chhattisgarh+490023" target="_blank" rel="noopener" class="btn btn-outline btn-large">Get Directions</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer-wordmark" data-speed="-0.1" aria-hidden="true">KAIZEN</div>
+  <div class="footer-grid">
+    <div>
+      <p class="footer-logo">KAI<span>ZEN</span></p>
+      <p>Gym &amp; fitness centre in Kohka, Bhilai. Small, disciplined efforts, repeated daily.</p>
+    </div>
+    <nav aria-label="Footer">
+      <p class="footer-heading">Quick Links</p>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#training">Training</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div>
+      <p class="footer-heading">Contact</p>
+      <address>Avanti Bai Chowk, in front of Petrol Pump,<br>Kohka, Bhilai, Chhattisgarh 490023</address>
+      <a href="tel:+917000835622">+91 70008 35622</a>
+      <a href="https://wa.me/917000835622" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 KaiZen Fitness. All rights reserved.</p>
+    <p>Kohka, Bhilai, Chhattisgarh</p>
+  </div>
+</footer>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function () {
+  var root = document.documentElement;
+  var toggle = document.getElementById('nav-toggle');
+  var burger = document.querySelector('.nav-toggle-label');
+
+  // ---- Mobile menu: lock page scroll while open, close on link / Esc / resize
+  function setMenu(open) {
+    toggle.checked = open;
+    root.style.overflow = open ? 'hidden' : '';
+    if (burger) burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  }
+  toggle.addEventListener('change', function () { setMenu(toggle.checked); });
+  document.querySelectorAll('.nav-links a').forEach(function (l) {
+    l.addEventListener('click', function () { setMenu(false); });
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+  window.addEventListener('resize', function () { if (window.innerWidth > 960) setMenu(false); });
+
+  var header = document.querySelector('.site-header');
+  var bar = document.getElementById('progress-bar');
+  var ticking = false;
+  function onScroll() {
+    header.classList.toggle('is-scrolled', window.scrollY > 40);
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar && h > 0) bar.style.transform = 'scaleX(' + Math.min(1, window.scrollY / h) + ')';
+    ticking = false;
+  }
+  window.addEventListener('scroll', function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(onScroll); }
+  }, { passive: true });
+  onScroll();
+
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || !window.gsap || !window.ScrollTrigger) {
+    root.classList.add('no-motion');
+    return;
+  }
+
+  gsap.registerPlugin(ScrollTrigger);
+  // Mobile: address bar show/hide must not re-trigger layout recalculation (stops jitter)
+  ScrollTrigger.config({ ignoreMobileResize: true });
+  var mm = gsap.matchMedia();
+
+  // Hero intro
+  gsap.from('.hero-line', { yPercent: 110, duration: 1.1, ease: 'power4.out', stagger: 0.12, delay: 0.1 });
+  gsap.from('.hero-location, .hero-sub, .hero-actions, .hero-whatsapp, .hero-rating', { y: 24, opacity: 0, duration: 0.9, ease: 'power3.out', stagger: 0.1, delay: 0.6 });
+  gsap.from('.hero-img', { scale: 1.15, duration: 2.2, ease: 'power2.out' });
+
+  // Desktop / tablet: full multi-layer parallax
+  mm.add('(min-width: 781px)', function () {
+    gsap.utils.toArray('[data-speed]').forEach(function (el) {
+      var s = parseFloat(el.dataset.speed);
+      var trigger = el.closest('section, footer') || el;
+      gsap.fromTo(el, { yPercent: -s * 50 }, {
+        yPercent: s * 50, ease: 'none',
+        scrollTrigger: { trigger: trigger, start: 'top bottom', end: 'bottom top', scrub: true }
+      });
+    });
+    gsap.utils.toArray('[data-inner-speed]').forEach(function (img) {
+      var s = parseFloat(img.dataset.innerSpeed);
+      gsap.fromTo(img, { yPercent: -s * 100, scale: 1.2 }, {
+        yPercent: s * 100, scale: 1.2, ease: 'none',
+        scrollTrigger: { trigger: img.parentElement, start: 'top bottom', end: 'bottom top', scrub: true }
+      });
+    });
+    gsap.utils.toArray('.training-panel').forEach(function (p) {
+      gsap.from(p, {
+        clipPath: 'inset(12% 6% 12% 6%)', opacity: 0.4, duration: 1.1, ease: 'power3.out',
+        scrollTrigger: { trigger: p, start: 'top 85%', once: true }
+      });
+    });
+  });
+
+  // Phones: light parallax only on the big backgrounds (no per-card movement = no overlap / lag)
+  mm.add('(max-width: 780px)', function () {
+    ['.hero-layer--bg', '.motivation-bg'].forEach(function (sel) {
+      var el = document.querySelector(sel);
+      if (!el) return;
+      gsap.fromTo(el, { yPercent: -4 }, {
+        yPercent: 4, ease: 'none',
+        scrollTrigger: { trigger: el.closest('section'), start: 'top bottom', end: 'bottom top', scrub: 0.6 }
+      });
+    });
+    // simple fade-up for training cards instead of clip-path
+    gsap.utils.toArray('.training-panel').forEach(function (p) {
+      gsap.from(p, {
+        y: 36, opacity: 0, duration: 0.8, ease: 'power3.out',
+        scrollTrigger: { trigger: p, start: 'top 92%', once: true }
+      });
+    });
+  });
+
+  // Hero text fades as you scroll out
+  gsap.to('.hero-content', {
+    opacity: 0, ease: 'none',
+    scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom 30%', scrub: true }
+  });
+
+  // Marquee drifts with scroll
+  gsap.to('.marquee-track', {
+    xPercent: -25, ease: 'none',
+    scrollTrigger: { trigger: '.marquee', start: 'top bottom', end: 'bottom top', scrub: true }
+  });
+
+  // Scroll-triggered reveals (earlier trigger point on short mobile screens)
+  var revealStart = window.innerWidth <= 780 ? 'top 95%' : 'top 88%';
+  ScrollTrigger.batch('[data-reveal]', {
+    start: revealStart, once: true,
+    onEnter: function (els) {
+      gsap.fromTo(els, { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, ease: 'power3.out', stagger: 0.1, overwrite: true });
+    }
+  });
+  gsap.set('[data-reveal]', { opacity: 0 });
+
+  window.addEventListener('load', function () { ScrollTrigger.refresh(); });
+  // Safety net: if anything is still hidden after 4s (slow network), show it
+  setTimeout(function () {
+    document.querySelectorAll('[data-reveal]').forEach(function (el) {
+      if (getComputedStyle(el).opacity === '0' && el.getBoundingClientRect().top < window.innerHeight) {
+        gsap.to(el, { opacity: 1, y: 0, duration: 0.6 });
+      }
+    });
+  }, 4000);
+})();
+</script>
+</body>
+</html>
